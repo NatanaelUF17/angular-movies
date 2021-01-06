@@ -586,7 +586,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\snake\\.nuget\\packages\\": {}
+    "C:\\Users\\snake\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -597,9 +598,13 @@
       "packagesPath": "C:\\Users\\snake\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\snake\\OneDrive - Universidad Católica Nordestana (UCNE)\\Documentos\\Programming\\Angular\\back-end\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
         "C:\\Users\\snake\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
