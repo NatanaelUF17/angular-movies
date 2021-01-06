@@ -1,0 +1,13 @@
+<app-menu></app-menu>
+
+<div class="contenedor">
+    
+    <app-rating (rated)="manejadorRated($event)"></app-rating>
+    <h2>{{ titles.enCines }}</h2>
+
+    <app-listado-peliculas [peliculas]="peliculasEnCine"></app-listado-peliculas>
+
+    <h2>{{ titles.futurosEstrenos }}</h2>
+
+    <app-listado-peliculas [peliculas]="peliculasFuturosEstrenos"></app-listado-peliculas>
+</div>
