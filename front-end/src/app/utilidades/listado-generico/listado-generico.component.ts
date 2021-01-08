@@ -13,5 +13,5 @@ export class ListadoGenericoComponent implements OnInit {
   }
 
   @Input()
-  listado: any;
+  listado: any[] = [];
 }

@@ -29,7 +29,9 @@ const routes: Routes = [
   { path: 'cines/editar/:id', component: EditarCineComponent },
   //Rutas para los componentes de peliculas
   { path: 'peliculas/crear', component: CrearPeliculaComponent },
-  { path: 'peliculas/editar/:id', component: EditarPeliculaComponent }
+  { path: 'peliculas/editar/:id', component: EditarPeliculaComponent },
+  //Wildcard para capturar urls incorrectas o inexistente
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
