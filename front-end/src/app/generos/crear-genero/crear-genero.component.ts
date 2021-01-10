@@ -1,26 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
+import { generoCreacionDTO } from '../genero';
 
 @Component({
   selector: 'app-crear-genero',
   templateUrl: './crear-genero.component.html',
   styleUrls: ['./crear-genero.component.css']
 })
-export class CrearGeneroComponent implements OnInit {
+export class CrearGeneroComponent {
 
-  constructor(private router: Router, private formBuilder: FormBuilder) { }
-
-  form: any = FormGroup;
-
-  ngOnInit(): void {
-    this.form = this.formBuilder.group({
-      nombre: ''
-    });
-  }
-
-  guardarGenero() {
-    //... Se guardara el genero
+  constructor(private router: Router) { }
+  
+  guardarGenero(genero: generoCreacionDTO) {
+    console.log(genero);
     this.router.navigate(['/generos']);
   }
+
 }
