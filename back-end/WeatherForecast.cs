@@ -13,5 +13,6 @@ namespace back_end
         public string Summary { get; set; }
 
         public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+       
     }
 }
